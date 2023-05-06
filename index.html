@@ -1,94 +1,133 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Emerald Design</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <title>Mad Brothers Bakery</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body {
+      background-color: #f2f2f2;
+    }
+    .jumbotron {
+      background-size: cover;
+      height: 400px;
+      text-align: center;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('images/istockphoto.jpg');
+    }
+    .jumbotron h1 {
+      font-size: 4rem;
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-title {
+      margin-bottom: 0;
+    }
+    .card-text {
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">Emerald Design</a>
+    <a class="navbar-brand" href="#">Mad Brothers Bakery</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="index7.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="about.html">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pricing.html">Our Prices</a>
+          <a class="nav-link" href="menu.html">Our Menu</a>
         </li>
       </ul>
     </div>
   </nav>
-  <div class="container mt-4">
+
+  <div class="jumbotron">
+    <div>
+      <h1> Mad Brothers Bakery</h1>
+      <p>Cabra cafe </p>
+    </div>
   </div>
 
+
+
+<!--
   <div class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to Emerald Design</h1>
-      <p class="lead">We're a small web design company located in Ireland, dedicated to building beautiful and functional websites for our clients.</p>
-      <!-- <hr class="my-4">
-      <p>Take a look at our portfolio and get in touch with us to discuss your next project!</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
-    </div>
-
     <div class="row">
       <div class="col-md-4">
-        <div class="card mb-4 box-shadow">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1529104962253-56ba3b3b2d7b" class="card-img-top" alt="Cafe 1">
           <div class="card-body">
-            <h4 class="card-title">Beautiful Design</h4>
-            <p class="card-text">We're passionate about design and take pride in creating websites that are both spectacular and functional.</p>
+            <h5 class="card-title">Cafe 1</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor suscipit quam, sit amet interdum velit faucibus eget.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
           </div>
         </div>
       </div>
       <div class="col-md-4">
-        <div class="card mb-4 box-shadow">
-          <div class="card-body">
-            <h4 class="card-title">Responsive Layout</h4>
-            <p class="card-text">We make sure that your website looks great on all devices, from desktops to smartphones.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card mb-4 box-shadow">
-          <div class="card-body">
-            <h4 class="card-title">Easy to Use</h4>
-            <p class="card-text">We believe that your website should be easy to use and navigate, so your visitors can find what they're looking for quickly and easily.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6">
-        <h2>Our Services</h2>
-        <p>We offer a range of web design services to suit your needs, including:</p>
-        <ul>
-          <li>Custom website design and development</li>
-          <li>E-commerce websites</li>
-          <li>Website maintenance and support</li>
-          <li>Website hosting</li>
-        </ul>
-        <p>Take a look at our <a href="pricing.html">pricing page</a> for subscription information.</p>
-      </div>
-      <div class="col-md-6">
-        <h2>Contact Us</h2>
-        <p>Get in touch with us to discuss your next project.</p>
-        <ul>
-          <li>Email: emeraldwebdesign@gmail.com</li>
-          <li>Phone: 083 457 1723</li>
-        </ul>
-        <!-- <p>You can also find us on <a href="#">Facebook</a> and <a href="#">Twitter</a>.</p> -->
+        <div class="card">
+      <img src="https://images.unsplash.com/photo-1580519543131-5b34a6d467bf" class="card-img-top" alt="Cafe 3">
+      <div class="card-body">
+        <h5 class="card-title">Cafe 3</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor suscipit quam, sit amet interdum velit faucibus eget.</p>
+        <a href="#" class="btn btn-primary">Learn More</a>
       </div>
     </div>
   </div>
+</div>
+</div>
+-->
+ <!-- Bootstrap JS and jQuery -->
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ <!-- Contact Section -->
+ <!-- Contact Section -->
+ <section id="contact" class="section">
+ 	<div class="container">
+ 		<h2>Contact Us</h2>
+ 		<div class="row">
+ 			<div class="col-sm-6">
+ 				<p>Feel free to reach out to us with any questions or feedback.</p>
+ 				<p><i class="fa fa-phone"></i> (123) 456-7890</p>
+ 				<p><i class="fa fa-envelope"></i> MadBrothersDublin@gmail.com</p>
+ 				<p><i class="fa fa-map-marker"></i> 17 Nephin Rd, Ashtown, Dublin, D07 N8K7
+</p>
+ 			</div>
+ 		</div>
+ 	</div>
+ </section>
+ <!-- Footer -->
+
+ <footer>
+ 	<div class="container">
+ 		<p>&copy; 2023 Mad Brothers Bakery. All rights reserved.</p>
+ 		<ul class="list-inline">
+      <li><a href="https://www.tiktok.com/@madbrothersbakery"><i class="fab fa-tiktok"></i><span> Follow us on tiktok</span></a></li>
+      <li><a href="https://www.instagram.com/madbrothers.bakery/?utm_source=ig_embed&ig_rid=be6a29c1-694b-46f5-bddb-ff8814f47792&ig_mid=967072D4-B789-47E9-B4C3-08FFF81965F5"><i class="fa fa-instagram"></i><span> Follow us on instagram</span></a></li>
+ </ul>
+ </div>
+ </footer>
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNVQ8vc" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
