@@ -4,10 +4,16 @@
   <meta charset="UTF-8">
   <title>Mad Brothers Bakery</title>
   <!-- Bootstrap CSS -->
+
+  <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
   <style>
     body {
       background-color: #f2f2f2;
@@ -53,25 +59,39 @@
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html">Mad Brothers Bakery</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="menu.html">Our Menu</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <div class="navbar-image">
+        <img src="favico-square.png" width="45" lenght="45">
+      </div>
+      <a class="navbar-brand" href="index.html">Mad Brothers Bakery</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html#about-us">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html#menu-paragraph">Our Menu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+    function scrollToSection(event) {
+      event.preventDefault(); // Prevent default behavior of link click
+      const section = document.getElementById('menu-paragraph'); // Get contact section by ID
+      section.scrollIntoView({behavior: "smooth"}); // Scroll to contact section smoothly
+    }
+    </script>
 
   <div class="jumbotron">
     <div>
