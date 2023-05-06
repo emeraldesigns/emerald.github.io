@@ -6,12 +6,31 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Custom CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
+
+  a {
+display: inline-block;
+text-decoration: none;
+}
+
+i {
+font-size: 24px;
+margin-right: 10px;
+vertical-align: middle;
+}
+
+    span {
+    font-size: 16px;
+    color: #333;
+vertical-align: middle;
+}
+
     body {
       background-color: #f2f2f2;
     }
+
     .jumbotron {
       background-size: cover;
       height: 400px;
@@ -42,7 +61,7 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index7.html">Mad Brothers Bakery</a>
+    <a class="navbar-brand" href="#">Mad Brothers Bakery</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -68,20 +87,70 @@
     </div>
   </div>
 
-	<section id="about-us" class="py-5">
+  <section id="menu-paragraph" class="py-5">
 	  <div class="container">
 	    <div class="row">
 	      <div class="col-md-6">
-	        <h2>About Us</h2>
-	        <p>We are a family-owned bakery, our passion for baking and commitment to using only the freshest ingredients have made us a favorite among the local community.</p>
-	        <p>At Mad Brothers Bakery, we believe that every treat should be a special experience. That's why we take the time to carefully craft each recipe, from our signature cupcakes to our artisanal breads.</p>
+          <h2>Our Menu</h2>
+          <p>Our menu features a variety of coffee drinks, including classic favorites like cappuccinos and lattes, as well as more unique options like our signature cold brew with vanilla syrup. In addition to coffee, we also offer a selection of delicious pastries and baked goods made fresh daily by our talented bakers. Whether you're in the mood for a savory croissant or a sweet danish, we have something to satisfy every craving. We take pride in using only the highest quality ingredients in all of our products, and we are constantly experimenting with new flavors and techniques to bring you the best possible experience. Come visit us today and try something new!</p>
 	      </div>
 	      <div class="col-md-6">
-	        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-xJV1yoFIr75lJg5BFDcWJpAlX3brv1a7Fw&usqp=CAU" alt="About Us" class="img-fluid rounded-circle">
+	        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQOhZaI3gt_Un4cVA6WEOHllsvC4NuCk8-IqNaBkVgxcaSEirpJGsiO2dat0ImbS91lew&usqp=CAU" alt="About Us" class="img-fluid rounded-circle">
 	      </div>
 	    </div>
 	  </div>
 	</section>
+
+
+  <section id="menu" class="section">
+		<div class="container">
+			<h2>Some Items</h2>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="menu-item">
+						<img src="https://via.placeholder.com/300x200" alt="Menu Item Image">
+						<div class="menu-item-details">
+							<h3>Latte</h3>
+							<p>A shot of espresso with steamed milk and a layer of foam on top</p>
+							<p><strong> 							Price:</strong> €3.99</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="menu-item">
+					<img src="https://via.placeholder.com/300x200" alt="Menu Item Image">
+					<div class="menu-item-details">
+						<h3>Croissant</h3>
+						<p>A flaky pastry made with butter and filled with chocolate</p>
+						<p><strong>Price:</strong> €2.99</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="menu-item">
+					<img src="https://via.placeholder.com/300x200" alt="Menu Item Image">
+					<div class="menu-item-details">
+						<h3>Cappuccino</h3>
+						<p>A shot of espresso with equal parts steamed milk and foam</p>
+						<p><strong>Price:</strong> €3.99</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="menu-item">
+					<img src="https://via.placeholder.com/300x200" alt="Menu Item Image">
+					<div class="menu-item-details">
+						<h3>Croque Madame</h3>
+						<p>A ham and cheese sandwich topped with a fried egg</p>
+						<p><strong>Price:</strong> €7.99</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 
 <!--
@@ -110,7 +179,6 @@
 </div>
 </div>
 -->
- <!-- Bootstrap JS and jQuery -->
 
  <!-- Contact Section -->
  <section id="contact" class="section">
@@ -132,10 +200,10 @@
  <footer>
  	<div class="container">
  		<p>&copy; 2023 Mad Brothers Bakery. All rights reserved.</p>
- 		<ul class="list-inline">			
-	      <li><a href="https://www.tiktok.com/@madbrothersbakery"><i class="fab fa-tiktok"></i><span> Follow us on tiktok</span></a></li>
-	      <li><a href="https://www.instagram.com/madbrothers.bakery/?utm_source=ig_embed&ig_rid=be6a29c1-694b-46f5-bddb-ff8814f47792&ig_mid=967072D4-B789-47E9-B4C3-08FFF81965F5"><i class="fa fa-instagram"></i><span> Follow us on instagram</span></a></li>
-</ul>
+ 		<ul class="list-inline">
+        <li><a href="https://www.tiktok.com/@madbrothersbakery"><i class="fab fa-tiktok"></i><span>Follow us on tiktok</span></a></li>
+        <li><a href="https://www.instagram.com/madbrothers.bakery/?utm_source=ig_embed&ig_rid=be6a29c1-694b-46f5-bddb-ff8814f47792&ig_mid=967072D4-B789-47E9-B4C3-08FFF81965F5"><i class="fa fa-instagram"></i><span> Follow us on instagram</span></a></li>
+ </ul>
  </div>
  </footer>
 
