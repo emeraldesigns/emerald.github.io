@@ -31,74 +31,96 @@ vertical-align: middle;
 vertical-align: middle;
 }
 
-    body {
-      background-color: #f2f2f2;
-    }
-
-    .jumbotron {
-      background-size: cover;
-      height: 400px;
-      text-align: center;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-image: url('images/istockphoto.jpg');
-    }
-    .jumbotron h1 {
-      font-size: 4rem;
-    }
-    .card {
-      margin-bottom: 20px;
-    }
-    .card img {
-      height: 200px;
-      object-fit: cover;
-    }
-    .card-title {
-      margin-bottom: 0;
-    }
-    .card-text {
-      font-size: 0.9rem;
-    }
-    .container {
-      align-items: bottom;
-    }
-
-	  .navbar-image {
-  margin-right: 20px;
-  margin-left: -60px;
+body {
+  background-color: #f2f2f2;
 }
-	  
+.jumbotron {
+  background-size: cover;
+  height: 400px;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('images/istockphoto.jpg');
+}
+.jumbotron h1 {
+  font-size: 4rem;
+}
+.card {
+  margin-bottom: 20px;
+}
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+.card-title {
+  margin-bottom: 0;
+}
+.card-text {
+  font-size: 0.9rem;
+}
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+}
+
+.navbar-image {
+margin-right: 20px;
+margin-left: -60px;
+}
+
+.btn-primary:hover {
+background-color: #25D366;
+}
+
+.deliveroo {
+text-align: center;
+}
+
+
   </style>
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <div class="navbar-image">
-      <img src="favico-square.png" width="45" lenght="45">
-    </div>
-    <a class="navbar-brand" href="index.html">Mad Brothers Bakery</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html#about-us">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="menu.html#menu-paragraph">Our Menu</a>
-          </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <div class="navbar-image">
+        <img src="favico-square.png" width="45" lenght="45">
       </div>
-    </div>
-  </nav>
+      <a class="navbar-brand" href="index.html">Mad Brothers Bakery</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html#about-us">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="menu.html#menu-paragraph">Our Menu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
+    <script>
+    function scrollToSection(event) {
+      event.preventDefault(); // Prevent default behavior of link click
+      const section = document.getElementById('menu-paragraph'); // Get contact section by ID
+      section.scrollIntoView({behavior: "smooth"}); // Scroll to contact section smoothly
+    }
+    </script>
 
   <div class="jumbotron">
     <div>
@@ -106,6 +128,7 @@ vertical-align: middle;
       <p>Cabra cafe </p>
     </div>
   </div>
+
 
   <section id="menu-paragraph" class="py-5">
 	  <div class="container">
@@ -173,65 +196,48 @@ vertical-align: middle;
 </section>
 
 
-<!--
+<section id="contact-us" class="py-5">
   <div class="container">
     <div class="row">
-      <div class="col-md-4">
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1529104962253-56ba3b3b2d7b" class="card-img-top" alt="Cafe 1">
-          <div class="card-body">
-            <h5 class="card-title">Cafe 1</h5>
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor suscipit quam, sit amet interdum velit faucibus eget.</p>
-            <a href="#" class="btn btn-primary">Learn More</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card">
-      <img src="https://images.unsplash.com/photo-1580519543131-5b34a6d467bf" class="card-img-top" alt="Cafe 3">
-      <div class="card-body">
-        <h5 class="card-title">Cafe 3</h5>
-        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor suscipit quam, sit amet interdum velit faucibus eget.</p>
-        <a href="#" class="btn btn-primary">Learn More</a>
+      <div class="col-md-6">
+        <h2>Contact Us</h2>
+        <p>Feel free to reach out to us with any questions or feedback.</p>
+        <p><i class="fa fa-phone"></i> (123) 456-7890</p>
+        <p><i class="fa fa-envelope"></i> <a href="mailto:MadBrothersDublin@gmail.com">MadBrothersDublin@gmail.com</a></p>
+        <p><i class="fa fa-map-marker"></i> 17 Nephin Rd, Ashtown, Dublin, D07 N8K7 </p>
+         </div>
+      <div class="col-md-6">
+        <h2>Hours of Operation</h2>
+        <p><b> Monday - Wendesday:</b> 	8 a.m.– 4 p.m</p>
+        <p><b> Thursday - Friday:</b> 	8 a.m.– 5 p.m</p>
+       <p><b>Saturday:</b>	8:30 a.m. – 5 p.m</p>
+       <p><b>Sunday: </b>	9 a.m. – 3:30 p.m</p>
+
       </div>
     </div>
   </div>
-</div>
-</div>
--->
+</section>
 
- <!-- Contact Section -->
-
- <section id="contact-us" class="py-5">
-   <div class="container">
-     <div class="row">
-       <div class="col-md-6">
-         <h2>Contact Us</h2>
-         <p>Feel free to reach out to us with any questions or feedback.</p>
-         <p><i class="fa fa-phone"></i> (123) 456-7890</p>
-         <p><i class="fa fa-envelope"></i> MadBrothersDublin@gmail.com</p>
-         <p><i class="fa fa-map-marker"></i> 17 Nephin Rd, Ashtown, Dublin, D07 N8K7 </p>
-          </div>
-       <div class="col-md-6">
-         <h2>Hours of Operation</h2>
-         <p>Monday - Friday: 7am - 10pm</p>
-         <p>Saturday - Sunday: 9am - 6pm</p>       </div>
-     </div>
-   </div>
- </section>
-
- <footer>
- 	<div class="container">
- 		<p>&copy; 2023 Mad Brothers Bakery. All rights reserved.</p>
- 		<ul class="list-inline">
-	      <li><a href="https://www.tiktok.com/@madbrothersbakery"><i class="fab fa-tiktok"></i><span>Follow us on tiktok</span></a></li>
-	      <li><a href="https://www.instagram.com/madbrothers.bakery/?utm_source=ig_embed&ig_rid=be6a29c1-694b-46f5-bddb-ff8814f47792&ig_mid=967072D4-B789-47E9-B4C3-08FFF81965F5"><i class="fa fa-instagram"></i><span> Follow us on instagram</span></a></li>
+<div class="socials">
+<div class="container">
+  <div class="text-center">
+<ul class="list-inline">
+    <li><a href="https://www.tiktok.com/@madbrothersbakery"><i class="fab fa-tiktok"></i><span> Follow us on tiktok</span></a></li>
+    <li><a href="https://www.instagram.com/madbrothers.bakery/?utm_source=ig_embed&ig_rid=be6a29c1-694b-46f5-bddb-ff8814f47792&ig_mid=967072D4-B789-47E9-B4C3-08FFF81965F5"><i class="fa fa-instagram"></i><span> Follow us on instagram</span></a></li>
 </ul>
- </div>
- </footer>
+</div>
+</div>
+</div>
 
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNVQ8vc" crossorigin="anonymous"></script>
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<footer>
+ <div class="container-fixed">
+   <p>&copy; 2023 Mad Brothers Bakery. All rights reserved.</p>
+</div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNVQ8vc" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
